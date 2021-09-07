@@ -30,5 +30,6 @@
 ## 시작하기
 
 1. 코드 내려받기
+
 ``` git clone "https://github.com/LateNightSeoul/Candy" ```
 
