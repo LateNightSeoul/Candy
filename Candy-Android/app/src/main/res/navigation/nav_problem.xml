@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_problem"
+    app:startDestination="@id/solvingProblemFragment">
+
+    <fragment
+        android:id="@+id/solvingProblemFragment"
+        android:name="com.example.candy.problem.SolvingProblemFragment"
+        android:label="SolvingProblemFragment" >
+        <action
+            android:id="@+id/action_solvingProblemFragment_to_markingProblemFragment"
+            app:destination="@id/markingProblemFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/markingProblemFragment"
+        android:name="com.example.candy.problem.MarkingProblemFragment"
+        android:label="MarkingProblemFragment" >
+        <action
+            android:id="@+id/action_markingProblemFragment_to_solvingProblemFragment"
+            app:destination="@id/solvingProblemFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/solvingProblemFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

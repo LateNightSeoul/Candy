@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_category_name"
+    style="@style/tv_recycler_category_style2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="2dp"
+    android:background="@drawable/rect_item_unselected"
+    android:gravity="center"
+    android:maxLines="1"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="5dp"
+    android:text="영어" />

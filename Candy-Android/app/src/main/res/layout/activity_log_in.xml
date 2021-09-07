@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.LogInActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_login"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@+id/LogInUtilContainer"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintWidth_percent="0.8">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/id"
+            app:boxBackgroundColor="@color/editbox"
+            app:errorEnabled="true"
+
+            app:layout_constraintBottom_toTopOf="@id/pwLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_square_round_bold"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pwLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/pw"
+            app:boxBackgroundColor="@color/editbox"
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/rememberIdPwdCheckBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pwEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_square_round_bold"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/emailET"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Email Address"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:backgroundTint="#999999"-->
+        <!--            android:textColorHint="#999999"-->
+        <!--            android:drawableStart="@drawable/ic_baseline_email_24"-->
+        <!--            android:drawablePadding="10dp"-->
+
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintBottom_toTopOf="@id/pwdET"/>-->
+        <!--        <EditText-->
+        <!--            android:id="@+id/pwdET"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Password"-->
+        <!--            android:inputType="textPassword"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:backgroundTint="#999999"-->
+        <!--            android:textColorHint="#999999"-->
+        <!--            android:drawableStart="@drawable/ic_baseline_lock_24"-->
+        <!--            android:drawablePadding="10dp"-->
+
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/rememberIdPwdCheckBox"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/emailET"/>-->
+
+        <CheckBox
+            android:id="@+id/rememberIdPwdCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디/비밀번호 저장"
+
+            app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pwLayout" />
+
+        <TextView
+            android:id="@+id/loginBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_gradient"
+            android:gravity="center"
+            android:text="로그인"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rememberIdPwdCheckBox"
+            app:layout_constraintWidth_percent="0.8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LogInUtilContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintWidth_percent="0.7">
+
+        <TextView
+            android:id="@+id/findIdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="아이디 찾기"
+            android:textColor="@color/text_pink"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@id/signupBtn"
+            app:layout_constraintEnd_toStartOf="@id/findPwdBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/findPwdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="비밀번호 찾기"
+            android:textColor="@color/text_pink"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@id/signupBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/findIdBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signupBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rect_stroke_pink"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textColor="@color/text_pink"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.8" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
