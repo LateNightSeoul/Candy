@@ -71,9 +71,13 @@ git clone "https://github.com/LateNightSeoul/Candy"
 
 Candy-Server\build\libs 의 jar 파일 실행 후  8080포트로 접근 가능
 
+
   - DB 접속
+  
     서버 실행 후 localhost:8080/h2-console
+    
   - Api 문서 보기
+  
     서버 실행 후 localhost:8080/swagger-ui.html
   
 - 안드로이드
