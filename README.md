@@ -76,3 +76,14 @@ localhost:8080으로 접근 가능
   - Api 문서 보기
     서버 실행 후 localhost:8080/swagger-ui.html
   
+- 안드로이드
+
+
+## 실행 화면 
+
+
+시작 화면
+
+![image](https://user-images.githubusercontent.com/60308568/132361844-c65f0a54-503f-4c4f-a656-0a9be2012663.png)
+
+
