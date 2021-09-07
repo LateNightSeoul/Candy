@@ -82,7 +82,7 @@ Candy-Server\build\libs 의 jar 파일 실행 후  8080포트로 접근 가능
 ### 안드로이드
 
   1. Android Studio 실행 후 File > New > Import Project 메뉴 선택
-  2. Candy-Android 선택 후 OK 선택
+  2. Candy-Android 폴더 선택 후 OK 선택
   3. Build > Build Bundle(s) / APK(s) > Build APK(s) 메뉴 선택
   4. 빌드된 APK를 안드로이드 기기에 설치 후 실행
 
