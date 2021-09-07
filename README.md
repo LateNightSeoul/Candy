@@ -91,15 +91,17 @@ localhost:8080으로 접근 가능
 ![image](https://user-images.githubusercontent.com/60308568/132361971-6e3fcd12-6dd1-4134-bfb5-59e5dbaea9d9.png)
 
 - 캔디 충전
-    충전한 캔디로 챌린지에 배정할 수 있습니다.
+    - 충전한 캔디로 챌린지에 배정할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/60308568/132362044-b1a3e0da-6cb8-48e3-a1c3-032671f504f3.png)
 
 - 캔디 배정
+- 
 ![image](https://user-images.githubusercontent.com/60308568/132362208-d2489c2a-2124-4ffd-ae96-124b44475ab7.png)
 
 - 진행 중인 챌린지 리스트
-    캔디가 배정 된 챌린지로써 자녀가 도전 가능합니다.
+    - 캔디가 배정 된 챌린지로써 자녀가 도전 가능합니다.
+    - 
 ![image](https://user-images.githubusercontent.com/60308568/132362269-0d1169fe-3b62-4489-9ac0-52cbafb0c59c.png)
 
 - 강의 듣기
@@ -108,8 +110,10 @@ localhost:8080으로 접근 가능
 
 - 문제 풀기
     커트라인 이상 획득 시 캔디를 획득합니다.
+    
 ![image](https://user-images.githubusercontent.com/60308568/132362427-54b82b10-7652-4e7f-ad74-c5ad3390eff4.png)
 
 - 문제 풀기 후
     챌린지 도전에 성공하여 진행 중인 챌린지에서 완료된 챌린지로 상태 변경 및 캔디 20개를 획득한 모습
+    
 ![image](https://user-images.githubusercontent.com/60308568/132362531-6a5ff108-d8a4-45ac-8953-382dfd01ae18.png)
