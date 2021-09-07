@@ -22,7 +22,7 @@
 - Spring 2.5.2
 - H2 Database 
 
-```
+``` gradle
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
@@ -37,9 +37,7 @@ dependencies {
     implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
     implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
     annotationProcessor group: 'org.springframework.boot', name: 'spring-boot-configuration-processor'
-    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
-    // https://mvnrepository.com/artifact/javax.validation/validation-api
     implementation 'javax.validation:validation-api:2.0.1.Final'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.json:json:20190722'
