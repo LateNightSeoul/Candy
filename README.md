@@ -1,6 +1,6 @@
 # 동기 부여 교육 앱 : Candy
 
-![image](https://user-images.githubusercontent.com/60308568/132358449-42e6af8b-b8fe-48ba-9d91-2b08a70d06c0.png)
+<center> ![image](https://user-images.githubusercontent.com/60308568/132358449-42e6af8b-b8fe-48ba-9d91-2b08a70d06c0.png) </center>
 
 
 ## 개요
