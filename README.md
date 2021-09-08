@@ -56,8 +56,62 @@ dependencies {
 
 안드로이드
 - IDE : Android Studio
-- Gradle
-- Kotlin
+- Gradle 4.1.2
+- Kotlin 1.4.31
+
+``` gradle
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    def nav_version = "2.3.5"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "androidx.fragment:fragment-ktx:1.3.5"
+
+    implementation "com.sun.mail:android-mail:1.6.6"
+    implementation "com.sun.mail:android-activation:1.6.6"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
+
+    def retrofit_ver = "2.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_ver"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_ver"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
+
+    // UI - Circular TextView
+    implementation 'com.libRG:customtextview:2.2'
+
+    def lifecycle_version = "2.3.1"
+    def arch_version = "2.1.0"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.15.0'
+
+    // rx
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.3.0'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.0"
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+}
+```
 
 ## 시작하기
 
